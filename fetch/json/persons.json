@@ -1,0 +1,21 @@
+[{
+    "name": "Peter Hansen",
+    "age": 52,
+    "hairColor": "brown",
+    "relation": "dad"
+  }, {
+    "name": "Alicia Hansen",
+    "age": 51,
+    "hairColor": "blonde",
+    "relation": "mom"
+  }, {
+    "name": "Martin Hansen",
+    "age": 22,
+    "hairColor": "dark",
+    "relation": "brother"
+  },{
+    "name": "Jesper Petersen",
+    "age": 35,
+    "hairColor": "brown",
+    "relation": "uncle"
+  }]
