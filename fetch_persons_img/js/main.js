@@ -26,5 +26,5 @@ function appendPersons(persons) {
       </article>
     `;
   }
-  gridPersons.innerHTML = htmlTemplate;
+  document.querySelector("#persons").innerHTML = htmlTemplate;
 }

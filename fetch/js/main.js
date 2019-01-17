@@ -17,5 +17,5 @@ function appendPersons(persons) {
   for (person of persons) {
     htmlTemplate += '<article><h4>' + person.name + '</h4><p>' + person.age + ' years old</p></article>';
   }
-  gridPersons.innerHTML = htmlTemplate;
+  document.querySelector("#persons").innerHTML = htmlTemplate;
 }

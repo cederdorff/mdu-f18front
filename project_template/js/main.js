@@ -1,7 +1,7 @@
 "use strict";
 
 // appends string to the DOM
-document.querySelector("#page-content").innerHTML = "Hi Frontenders!";
+document.querySelector("#content").innerHTML = "Hi Frontenders!";
 
 // declaring techer objects
 let teacher1 = {

@@ -20,13 +20,13 @@ h1 {
   margin: 1em 0;
 }
 
-.gridContainer {
+.grid-container {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   padding: 10px;
 }
 
-.gridContainer>article {
+.grid-container>article {
   text-align: center;
   padding: 10px;
 }
