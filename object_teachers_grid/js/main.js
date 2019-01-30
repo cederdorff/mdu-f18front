@@ -52,7 +52,7 @@ document.querySelector("#grid-teachers").innerHTML +=
   "<h3>" + teacher1.name + "</h3>" +
   teacher1.position + "<br>" +
   "<a href='mailto:" + teacher1.mail + "'>" + teacher1.mail + "</a>" +
-  "<article>";
+  "</article>";
 
 //teacher2 - Michael
 document.querySelector("#grid-teachers").innerHTML +=
@@ -61,7 +61,7 @@ document.querySelector("#grid-teachers").innerHTML +=
   "<h3>" + teacher2.name + "</h3>" +
   teacher2.position + "<br>" +
   "<a href='mailto:" + teacher2.mail + "'>" + teacher2.mail + "</a>" +
-  "<article>";
+  "</article>";
 
 //teacher3 - Rasmus
 document.querySelector("#grid-teachers").innerHTML +=
@@ -70,4 +70,4 @@ document.querySelector("#grid-teachers").innerHTML +=
   "<h3>" + teacher3.name + "</h3>" +
   teacher3.position + "<br>" +
   "<a href='mailto:" + teacher3.mail + "'>" + teacher3.mail + "</a>" +
-  "<article>";
+  "</article>";
