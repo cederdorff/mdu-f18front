@@ -29,7 +29,7 @@ let teacher2 = {
 // Rasmus
 let teacher3 = {
   name: "Rasmus Cederdorff",
-  initials: "mhv",
+  initials: "race",
   mail: "race@baaa.dk",
   phone: "72286318",
   address: "Sønderhøj 30, 8260 Viby J",
