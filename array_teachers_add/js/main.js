@@ -54,12 +54,22 @@ appendTeachers(teachers);
 function createTeacher() {
   // get the values from the input fields
   let name = document.querySelector('#add-teacher-form input[name=name]').value;
-  console.log(name);
+  let initials = document.querySelector('#add-teacher-form input[name=initials]').value;
+  let mail = document.querySelector('#add-teacher-form input[name=mail]').value;
+  let phone = document.querySelector('#add-teacher-form input[name=phone]').value;
+  let img = document.querySelector('#add-teacher-form input[name=img]').value;
+  let position = document.querySelector('#add-teacher-form input[name=position]').value;
 
   // create a new object
   let newteacher = {
-    name: name
+    name: name,
+    initials: initials,
+    mail: mail,
+    phone: phone,
+    img: img,
+    position: position
   };
+
   teachers.push(newteacher);
 
   // reset grid
