@@ -45,6 +45,6 @@ function appendTeachers(teachers) {
       "<h3>" + teacher.name + "</h3>" +
       teacher.position + "<br>" +
       "<a href='mailto:" + teacher.mail + "'>" + teacher.mail + "</a>" +
-      "<article>";
+      "</article>";
   }
 }
