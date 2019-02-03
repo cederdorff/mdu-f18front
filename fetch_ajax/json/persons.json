@@ -1,0 +1,25 @@
+[{
+    "name": "Peter Hansen",
+    "mail": "p@h.dk",
+    "age": 52,
+    "hairColor": "brown",
+    "relation": "dad"
+  }, {
+    "name": "Alicia Hansen",
+    "mail": "alicia@hansen.dk",
+    "age": 51,
+    "hairColor": "blonde",
+    "relation": "mom"
+  }, {
+    "name": "Martin Hansen",
+    "mail": "martin@hansen.dk",
+    "age": 22,
+    "hairColor": "dark",
+    "relation": "brother"
+  },{
+    "name": "Jesper Petersen",
+    "mail": "jesper@petersen.dk",
+    "age": 35,
+    "hairColor": "brown",
+    "relation": "uncle"
+  }]
