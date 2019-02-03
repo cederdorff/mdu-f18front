@@ -1,0 +1,26 @@
+html {
+  color: #333;
+  display: table;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > .grid-item {
+  text-align: center;
+  padding: 20px 0;
+}
