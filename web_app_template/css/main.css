@@ -2,7 +2,7 @@
 :root {
   --green: rgb(38, 76, 89);
   --light-green: rgb(172, 198, 201);
-  --light-grey: rgb(241, 241, 236);
+  --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
 }
