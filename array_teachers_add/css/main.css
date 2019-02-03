@@ -49,3 +49,31 @@ h3 {
   width: 100%;
   margin-bottom: 1em;
 }
+
+/* input form stryling */
+.form {
+  margin: auto;
+}
+
+.form button {
+  font-weight: 200;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 12px 15px;
+  font-size: 1em;
+  border-radius: 0;
+  color: #ffffff !important;
+  background-color: rgb(38, 76, 89);
+  width: 100%;
+  max-width: 350px;
+}
+
+input {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  display: block;
+}
