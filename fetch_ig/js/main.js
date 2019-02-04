@@ -15,22 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   feed.run();
 
-  let appendImages = (images) => {
+  function appendImages(images) {
+    let htmlTemplate = "";
     for (let image of images) {
+      htmlTemplate += "<article>";
       if (image.type === "image") {
-        document.querySelector('#myInstagramFeed').innerHTML += `
-        <img src="${image.images.standard_resolution.url}">`;
+        htmlTemplate += `<img src="${image.images.standard_resolution.url}">`;
       } else if (image.type === "video") {
         console.log(image);
-        document.querySelector('#myInstagramFeed').innerHTML += `
+        htmlTemplate += `
         <video controls>
           <source src="${image.videos.standard_resolution.url}" type="video/mp4">
         </video>
         `;
-
       }
-
+      htmlTemplate += "</article>";
     }
+    document.querySelector('#myInstagramFeed').innerHTML = htmlTemplate;
   }
 
 });

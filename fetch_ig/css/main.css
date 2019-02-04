@@ -13,3 +13,13 @@ h1 {
   font-weight: 300;
   letter-spacing: 3px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding: 10px;
+}
+
+.grid-container img {
+  width: 80%;
+}
