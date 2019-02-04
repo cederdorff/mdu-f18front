@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let htmlTemplate = "";
     for (let image of images) {
       htmlTemplate += "<article>";
-      if (image.type === "image") {
+      if (image.type === "image" || image.type === "carousel") {
         htmlTemplate += `<img src="${image.images.standard_resolution.url}">`;
       } else if (image.type === "video") {
         console.log(image);
