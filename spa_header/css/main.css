@@ -30,19 +30,7 @@ h1 {
 /* ---------- Grid container ---------- */
 .grid-container {
   display: grid;
-  grid-template-columns: 100%;
-}
-
-@media (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: 50% 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .grid-container {
-    grid-template-columns: 33.33% 33.33% 33.33%;
-  }
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
 /* ---------- topbar styling ---------- */
