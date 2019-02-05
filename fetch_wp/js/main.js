@@ -5,13 +5,11 @@ fetch("http://headlesscms.cederdorff.com/wp-json/wp/v2/posts")
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendPosts(json);
   });
 
 function appendPosts(posts) {
-  for (let i = 0; i < posts.length; i++) {
-    let post = posts[i];
+  for (let post of posts) {
     console.log(post);
     document.querySelector("#grid-posts").innerHTML += `
     <article class = "grid-item">
