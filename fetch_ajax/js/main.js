@@ -32,7 +32,7 @@ appends json data to the DOM
 */
 function appendPersons(persons, type) {
   let htmlTemplate = "";
-  for (person of persons) {
+  for (let person of persons) {
     htmlTemplate += `
     <article>
       <h4>${person.name}</h4>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <!-- tabbar navigation -->
+  <nav class="tabbar">
+    <a href="#home" onclick="showPage('home')">Home</a>
+    <a href="#family" onclick="showPage('family')">My family</a>
+    <a href="#teachers" onclick="showPage('teachers')">Teachers</a>
+    <a href="#contact" onclick="showPage('contact')">Contact</a>
+  </nav>
+
+  <!-- pages -->
+  <!-- home page -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h2>Home</h2>
+    </header>
+    <p>My Single Page Web App Template</p>
+  </section>
+
+  <!-- about page -->
+  <section id="family" class="page">
+    <header class="topbar">
+      <h2>My family</h2>
+    </header>
+    <section id="my-family"></section>
+  </section>
+
+  <!-- teachers page -->
+  <section id="teachers" class="page">
+    <header class="topbar">
+      <h2>Teachers</h2>
+    </header>
+    <section id="my-teachers"></section>
+  </section>
+
+  <!-- contact page -->
+  <section id="contact" class="page">
+    <header class="topbar">
+      <h2>Contact</h2>
+    </header>
+    <p>So, contact info?</p>
+    <p><a href="mailto:race@eaaa.dk">race@eaaa.dk</a></p>
+    <a href="http://cederdorff.com" target="_blank">
+      <img src="img/logo.png" alt="Cederdorff logo" class="logo">
+    </a>
+  </section>
+
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

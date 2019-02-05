@@ -15,7 +15,7 @@ Appends json data to the DOM
 */
 function appendPersons(persons) {
   let htmlTemplate = "";
-  for (person of persons) {
+  for (let person of persons) {
     htmlTemplate += `
       <article>
         <img src="img/${person.img}">
