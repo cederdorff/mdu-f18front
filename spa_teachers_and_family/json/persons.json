@@ -20,13 +20,13 @@
     "name": "Mie Madsen",
     "age": 25,
     "hairColor": "brown",
-    "relation": "blonde",
+    "relation": "sister",
     "img": "mie.jpg"
   }, {
     "name": "Mads Madsen",
     "age": 18,
     "hairColor": "dark",
-    "relation": "blonde",
+    "relation": "brother",
     "img": "mads.jpg"
   },{
     "name": "Jens Madsen",

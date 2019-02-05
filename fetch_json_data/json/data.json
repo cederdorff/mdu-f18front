@@ -26,12 +26,5 @@
   }, {
     "title": "My students are doing great with JS, JSON and fecth (...)",
     "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  }],
-  "computers" : [{
-    "brand": "Apple",
-    "model": "MacBook Pro"
-    }, {
-      "brand": "Lenovo",
-      "model": "ThinkPad X"
-      }]
+  }]
 }
