@@ -1,0 +1,26 @@
+html {
+  color: #333;
+  display: table;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.grid-container>.grid-item {
+  text-align: center;
+  padding: 15px;
+}
