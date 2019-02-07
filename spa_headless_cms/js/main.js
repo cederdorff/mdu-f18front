@@ -64,6 +64,7 @@ function appendPages(pages) {
   getTeachers();
 }
 
+// appends menu item to the nav menu
 function addMenuItem(page) {
   document.querySelector("#menu").innerHTML += `
   <a href="#${page.slug}" onclick="showPage('${page.slug}')">${page.title.rendered}</a>
@@ -71,6 +72,7 @@ function addMenuItem(page) {
 
 }
 
+// appends page section to the DOM
 function addPage(page) {
   document.querySelector("#pages").innerHTML += `
   <section id="${page.slug}" class="page">
@@ -83,7 +85,7 @@ function addPage(page) {
 }
 
 /*
-Fetches json data from the file persons.json
+Fetches post data from my headless cms
 */
 function getPersons() {
   fetch('http://headlesscms.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=3')
@@ -115,7 +117,7 @@ function appendPersons(persons) {
 }
 
 /*
-Fetches json data from my headless cms
+Fetches post data from my headless cms
 */
 function getTeachers() {
   fetch("http://headlesscms.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=2")
@@ -127,6 +129,7 @@ function getTeachers() {
     });
 }
 
+// appends teachers
 function appendTeachers(teachers) {
   let htmlTemplate = "";
   for (let teacher of teachers) {
@@ -143,6 +146,7 @@ function appendTeachers(teachers) {
   document.querySelector("#teachers").innerHTML += htmlTemplate;
 }
 
+// returns the source url of the featured image of given post or page
 function getFeaturedImageUrl(post) {
   let imageUrl = "";
   if (post._embedded['wp:featuredmedia']) {
