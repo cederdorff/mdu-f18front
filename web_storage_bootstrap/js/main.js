@@ -1,7 +1,7 @@
 "use strict";
 
 function saveLocalStorage() {
-  let email = document.querySelector('#local-storage-email').value;
+  let email = document.querySelector("#local-storage-email").value;
   console.log(email);
 
   // store value in local storage
@@ -11,7 +11,7 @@ function saveLocalStorage() {
 }
 
 function saveSessionStorage() {
-  let email = document.querySelector('#session-storage-email').value;
+  let email = document.querySelector("#session-storage-email").value;
   console.log(email);
 
   // store value in session storage
