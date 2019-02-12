@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BOOTSTRAP - PROJECT TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">HTML5 Web Storage</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">W3Schools Web Storage</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0" id="content">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">HTML5 Web Storage</h1>
+        <p class="lead">HTML web storage; better than cookies.</p>
+        <hr class="my-4">
+        <p>HTML web storage provides two objects for storing data on the client: <code>localStorage</code> and <code>sessionStorage</code>.</p>
+        <a class="btn btn-primary btn-lg" href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank" role="button">Learn more at W3Schools.com</a>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="jumbotron">
+            <h2 class="mt-5 display-4">Local Storage</h2>
+            <p class="lead">... stores data with no expiration date. The data will not be deleted when the browser is closed and will be available next time you open the browser.</p>
+            <form id="local-storage-form">
+              <div class="form-group">
+                <label>Email address</label>
+                <input id="local-storage-email" type="email" class="form-control" placeholder="Enter email">
+              </div>
+              <button type="button" class="btn btn-primary" onclick="saveLocalStorage()">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="jumbotron">
+            <h2 class="mt-5 display-4">Session Storage</h2>
+            <p class="lead">... stores data for one session. The data is lost when the browser tab is closed and will NOT be available next time you open the browser.</p>
+            <form id="session-storage-form">
+              <div class="form-group">
+                <label>Email address</label>
+                <input id="session-storage-email" type="email" class="form-control" placeholder="Enter email">
+              </div>
+              <button type="button" class="btn btn-primary" onclick="saveSessionStorage()">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="jumbotron">
+            <h2 class="mt-5 display-4">Storage</h2>
+            <p class="lead"><code>localStorage.email</code>: <span id="local-saved-email"></span></p>
+            <p class="lead"><code>sessionStorage.email</code>: <span id="session-saved-email"></span></p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script> <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
