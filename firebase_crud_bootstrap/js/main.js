@@ -1,22 +1,24 @@
+"use strict";
+
 const doc = document;
 
 let selectedUserKey;
 
 const config = {
-  apiKey: "AIzaSyBRd9Z3o8LPOKdB0wOyAASTx4Kvsh5j8So",
-  authDomain: "eaaa-front-fall-18.firebaseapp.com",
-  databaseURL: "https://eaaa-front-fall-18.firebaseio.com",
-  projectId: "eaaa-front-fall-18",
-  storageBucket: "eaaa-front-fall-18.appspot.com",
-  messagingSenderId: "174496885587"
+  apiKey: "AIzaSyAZS2e34mzXk0owl6G6JmavaupSY_h3dEI",
+  authDomain: "mdu-f18front.firebaseapp.com",
+  databaseURL: "https://mdu-f18front.firebaseio.com",
+  projectId: "mdu-f18front",
+  storageBucket: "mdu-f18front.appspot.com",
+  messagingSenderId: "343131301914"
 };
 
 firebase.initializeApp(config);
 const database = firebase.database();
 
-firebase.database().ref('users').on('value', snapshots => {
+firebase.database().ref('users').on('value', function(snapshots) {
   let htmlTemplate = "";
-  snapshots.forEach(snapshot => {
+  snapshots.forEach(function(snapshot) {
     let key = snapshot.key; // saves the key value in the variable key
     let user = snapshot.val(); // saves the data in the variable user
     user.key = key; // addes the key to my user object
@@ -34,7 +36,7 @@ firebase.database().ref('users').on('value', snapshots => {
       </article>
       `;
   });
-  doc.querySelector("#gridPersons").innerHTML = htmlTemplate;
+  doc.querySelector("#grid-persons").innerHTML = htmlTemplate;
 });
 
 function addUser() {

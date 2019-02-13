@@ -1,36 +1,39 @@
+"use strict";
 const doc = document;
-
 let selectedUserKey;
-
 const config = {
-  apiKey: "AIzaSyBRd9Z3o8LPOKdB0wOyAASTx4Kvsh5j8So",
-  authDomain: "eaaa-front-fall-18.firebaseapp.com",
-  databaseURL: "https://eaaa-front-fall-18.firebaseio.com",
-  projectId: "eaaa-front-fall-18",
-  storageBucket: "eaaa-front-fall-18.appspot.com",
-  messagingSenderId: "174496885587"
+  apiKey: "AIzaSyAZS2e34mzXk0owl6G6JmavaupSY_h3dEI",
+  authDomain: "mdu-f18front.firebaseapp.com",
+  databaseURL: "https://mdu-f18front.firebaseio.com",
+  projectId: "mdu-f18front",
+  storageBucket: "mdu-f18front.appspot.com",
+  messagingSenderId: "343131301914"
 };
 
 firebase.initializeApp(config);
 const database = firebase.database();
 
-let title = doc.querySelector("#title");
+let title = document.querySelector("#title");
 let dbRef = database.ref().child("title");
-dbRef.on('value', snap => title.innerHTML = snap.val());
+dbRef.on('value', function(snap) {
+  title.innerHTML = snap.val();
+});
 
-let subTitle = doc.querySelector("#subTitle");
+let subTitle = document.querySelector("#subTitle");
 let dbRef2 = database.ref().child("subTitle");
-dbRef2.on('value', snap => subTitle.innerHTML = snap.val());
+dbRef2.on('value', function(snap) {
+  subTitle.innerHTML = snap.val()
+});
 
-firebase.database().ref('users').on('value', snapshots => {
+firebase.database().ref('users').on('value', function(snapshots) {
   let htmlTemplate = "";
-  snapshots.forEach(snapshot => {
+  snapshots.forEach(function(snapshot) {
     let key = snapshot.key; // saves the key value in the variable key
     let user = snapshot.val(); // saves the data in the variable user
     user.key = key; // addes the key to my user object
     console.log(user);
     htmlTemplate += `
-      <article class="gridItem" id="${user.key}">
+      <article class="grid-item" id="${user.key}">
         <h4 class="name">${user.name}</h4>
         <a class="email" href="mailto:${user.email}">${user.email}</a>
         <br>
@@ -39,7 +42,7 @@ firebase.database().ref('users').on('value', snapshots => {
       </article>
       `;
   });
-  doc.querySelector("#gridPersons").innerHTML = htmlTemplate;
+  doc.querySelector("#grid-persons").innerHTML = htmlTemplate;
 });
 
 function addUser() {
@@ -66,7 +69,7 @@ function setSelectedUser(key) {
 }
 
 function updateUser() {
-  if(selectedUserKey){
+  if (selectedUserKey) {
     let newName = doc.querySelector("#userUpdateForm [name=name]").value;
     let newEmail = doc.querySelector("#userUpdateForm [name=email]").value;
 

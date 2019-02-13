@@ -25,14 +25,14 @@ h2 {
   letter-spacing: 3px;
 }
 
-.gridContainer {
+.grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
   padding: 10px;
 }
 
-.gridContainer>.gridItem {
+.grid-container>.grid-item {
   text-align: center;
   padding: 20px 0;
 }

@@ -1,33 +1,38 @@
+"use strict";
 const doc = document;
 const config = {
-  apiKey: "AIzaSyBRd9Z3o8LPOKdB0wOyAASTx4Kvsh5j8So",
-  authDomain: "eaaa-front-fall-18.firebaseapp.com",
-  databaseURL: "https://eaaa-front-fall-18.firebaseio.com",
-  projectId: "eaaa-front-fall-18",
-  storageBucket: "eaaa-front-fall-18.appspot.com",
-  messagingSenderId: "174496885587"
+  apiKey: "AIzaSyAZS2e34mzXk0owl6G6JmavaupSY_h3dEI",
+  authDomain: "mdu-f18front.firebaseapp.com",
+  databaseURL: "https://mdu-f18front.firebaseio.com",
+  projectId: "mdu-f18front",
+  storageBucket: "mdu-f18front.appspot.com",
+  messagingSenderId: "343131301914"
 };
 
 firebase.initializeApp(config);
 const database = firebase.database();
 
-let title = doc.querySelector("#title");
+let title = document.querySelector("#title");
 let dbRef = database.ref().child("title");
-dbRef.on('value', snap => title.innerHTML = snap.val());
+dbRef.on('value', function(snap) {
+  title.innerHTML = snap.val();
+});
 
-let subTitle = doc.querySelector("#subTitle");
+let subTitle = document.querySelector("#subTitle");
 let dbRef2 = database.ref().child("subTitle");
-dbRef2.on('value', snap => subTitle.innerHTML = snap.val());
+dbRef2.on('value', function(snap) {
+  subTitle.innerHTML = snap.val()
+});
 
-firebase.database().ref('users').on('value', snapshots => {
+firebase.database().ref('users').on('value', function(snapshots) {
   let htmlTemplate = "";
-  snapshots.forEach(snapshot => {
-    let key = snapshot.key; // saves the key value in the variable key
-    let user = snapshot.val(); // saves the data in the variable user
+  snapshots.forEach(function(userSnapshot) {
+    let key = userSnapshot.key; // saves the key value in the variable key
+    let user = userSnapshot.val(); // saves the data in the variable user
     user.key = key; // addes the key to my user object
     console.log(user);
     htmlTemplate += `
-      <article class="gridItem">
+      <article class="grid-item">
         <h4>${user.name}</h4>
         <a href="mailto:${user.email}">${user.email}</a>
       </article>
@@ -48,22 +53,3 @@ function addUser() {
   doc.querySelector("#userForm [name=name]").value = "";
   doc.querySelector("#userForm [name=email]").value = "";
 }
-
-// function updateUser() {
-//   let key = ""; // get the key of the object you want to delete
-//   let name = ""; // get the new name
-//   let email = ""; // get the new email
-//
-//   firebase.database().ref(`users/${key}`).update({
-//     name: name,
-//     email: email
-//   });
-//
-// }
-//
-// function deleteUser() {
-//   let key = ""; // get the key of the object you want to delete
-//
-//   firebase.database().ref(`users/${key}`).remove();
-//
-// }
