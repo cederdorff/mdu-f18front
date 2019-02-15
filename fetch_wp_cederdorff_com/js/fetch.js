@@ -72,4 +72,15 @@ doc.addEventListener("DOMContentLoaded", function() {
     return imageUrl;
   }
 
+  doc.querySelector("#header").addEventListener("click", function() {
+    scrollTo("#expertise");
+  });
+
+  function scrollTo(element) {
+    doc.querySelector(element).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
 });
