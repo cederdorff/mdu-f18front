@@ -1,0 +1,164 @@
+{
+  "artists": [{
+    "name": "Alice in Chains",
+    "genre": ["Rock"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://static.spin.com/files/130523-alice-in-chains-640x426.jpg",
+    "videourl": "https://youtu.be/a5YMiMNoNHg?t=514"
+  }, {
+    "name": "Cautious Clay",
+    "genre": ["R&B"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_526,w_1010,x_13,y_235,f_auto,q_auto:eco/_53A6533_mttxye/_53A6533_mttxye.jpg",
+    "videourl": "https://youtu.be/VERVVrzLSuo?t=17"
+  }, {
+    "name": "Foals",
+    "genre": ["Rock", "Indie"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "http://www.conversationsabouther.net/wp-content/uploads/2015/10/FOALS-2.jpg",
+    "videourl": "https://youtu.be/W98AAsEf404"
+  }, {
+    "name": "Kaytranada",
+    "genre": ["Hip-Hop", "EDM"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://s3.amazonaws.com/factmag-images/wp-content/uploads/2016/05/02131614/Kaytranada_photoCarysHuws2a.jpg",
+    "videourl": "https://youtu.be/JjuyV5TEKiI?t=1300"
+  }, {
+    "name": "Khalid",
+    "genre": ["R&B"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://www.billboard.com/files/styles/article_main_image/public/media/khalid-2018-cr-RoLexx-billboard-1548.jpg",
+    "videourl": "https://youtu.be/KdGQu7JRcXw?t=554"
+  }, {
+    "name": "Tame Impala",
+    "genre": ["Rock", "Pop"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://m.media-amazon.com/images/M/MV5BZGQxNWZiMmMtZTk3Yi00MjUxLWJjOWUtY2IzYWU1YzZlOTNkXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SX1777_CR0,0,1777,998_AL_.jpg",
+    "videourl": "https://youtu.be/qwqX0Vtssvo?t=1296"
+  }, {
+    "name": "The Streets",
+    "genre": ["Hip-Hop"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://static.gaffa.dk/images/2011/01/05/30c78/66753-860x484.jpg",
+    "videourl": "https://www.youtube.com/watch?v=1F5iWZ3OAQY"
+  }, {
+    "name": "Tove Lo",
+    "genre": ["Pop"],
+    "day": "Torsdag",
+    "scene": "X",
+    "imgurl": "https://i.ytimg.com/vi/gWbZ_KVHK5E/maxresdefault.jpg",
+    "videourl": "https://youtu.be/kGqzodO-Z9A?t=565"
+  }, {
+    "name": "Gnags",
+    "genre": ["Rock"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "https://static.gaffa.dk/images/2015/02/19/14ea2/176993-860x484.jpeg",
+    "videourl": "https://www.youtube.com/watch?v=BQmj5GTsD6A"
+  }, {
+    "name": "Jada",
+    "genre": ["Pop"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "https://image.redbull.com/rbcom/052/2018-07-02/0475e7bd-9842-48c7-807d-8a2d66f304e9/0010/1/1500/1000/1/jada-roskilde-festival.png",
+    "videourl": "https://www.youtube.com/watch?v=Xw_SCLTvjUA"
+  }, {
+    "name": "L.O.C.",
+    "genre": ["Hip-Hop"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "https://static.gaffa.dk/images/2018/11/21/017b7/311057-860x484.jpg",
+    "videourl": "https://www.youtube.com/watch?v=cmWp5VNhEBA"
+  }, {
+    "name": "Lydmor",
+    "genre": ["EDM"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "http://lydmor.dk/wp-content/uploads/2017/08/cropped-YES-1.jpg",
+    "videourl": "https://www.youtube.com/watch?v=HaFNir_f_qc"
+  }, {
+    "name": "Major Lazer",
+    "genre": ["EDM"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU4NzYxMzU4MzQxNDQ5Mzc3/major-lazer-press-2.jpg",
+    "videourl": "https://youtu.be/2WeeFw3jslg?t=1046"
+  }, {
+    "name": "Migos",
+    "genre": ["Hip-Hop"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": " https://www.billboard.com/files/styles/article_main_image/public/media/migos-press-2017-cr-David-Rams-billboard-1548.jpg",
+    "videourl": "https://www.youtube.com/watch?v=wIKZN5bN-mQ"
+  }, {
+    "name": "New Order",
+    "genre": ["Pop", "EDM"],
+    "day": "Fredag",
+    "scene": "X",
+    "imgurl": "https://ichef.bbci.co.uk/images/ic/960x540/p02y7hlb.jpg",
+    "videourl": "https://youtu.be/tBFqdhBTTY4?t=168"
+  }, {
+    "name": "Bon Iver",
+    "genre": ["Pop", "Indie"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://media.pitchfork.com/photos/592c56615e6ef95969326cec/2:1/w_790/7c3eb0fb.jpg",
+    "videourl": "https://youtu.be/YJNi7aRwUzU?t=190"
+  }, {
+    "name": "First Aid Kit",
+    "genre": ["Indie"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "http://img2-ak.lst.fm/i/u/arO/92b74237a2174a66ca4058a407bc57ae",
+    "videourl": "https://youtu.be/hPxF1duYHFw?t=54"
+  }, {
+    "name": "Georgia",
+    "genre": ["Pop", "EDM", "Hip-Hop"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/24/1435153434378/Georgia-009.jpg?width=1920&quality=85&auto=format&fit=max&s=6e66c1d430a447c53e30f8d0706569b6",
+    "videourl": "https://www.youtube.com/watch?v=xwJKnGvKfI0"
+  }, {
+    "name": "Jonah Blacksmith",
+    "genre": ["Rock", "Indie"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://www.limfjordupdate.dk/wp-content/uploads/Jonah-Blacksmith-2.jpg",
+    "videourl": "https://www.youtube.com/watch?v=2sxgCGVYjno"
+  }, {
+    "name": "Kurt Vile & The Violators",
+    "genre": ["Rock", "Indie"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://media2.fdncms.com/portmerc/imager/u/original/15886857/kurt-vile-and-the-violators.jpg",
+    "videourl": "https://youtu.be/W57a4aM6MhE?t=50"
+  }, {
+    "name": "Peter Sommer & Tiggerne",
+    "genre": ["Pop", "Rock"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://static.gaffa.dk/images/2017/10/04/33c5f/278816-860x484.jpg",
+    "videourl": "https://www.youtube.com/watch?v=MksMToXG2QQ"
+  }, {
+    "name": "Suspekt",
+    "genre": ["Hip-Hop"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "https://ekstrabladet.dk/incoming/article5001566.ece/IMAGE_ALTERNATES/relationBig_910/43535291.jpg",
+    "videourl": "https://www.youtube.com/watch?v=elbSyFtg7Ds"
+  }, {
+    "name": "The Minds of 99",
+    "genre": ["Rock"],
+    "day": "Lørdag",
+    "scene": "X",
+    "imgurl": "http://soundvenue.com/wp-content/uploads/2018/02/Minds7TOP_SamyKhabthani.jpg",
+    "videourl": "https://www.youtube.com/watch?v=HoZYc4WX7EA"
+  }]
+}
