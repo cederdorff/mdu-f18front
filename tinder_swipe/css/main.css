@@ -1,8 +1,8 @@
 #swipeContainer {
-  width: 500px;
-  margin: auto !important;
+  width: 100vw;
+  margin: auto 0 !important;
   display: block;
-  height: 500px;
+  height: 80vh;
   position: relative;
   list-style-type: none;
   -webkit-touch-callout: none;
@@ -11,6 +11,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-align: center;
 }
 
 .card {
@@ -20,12 +21,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 20px;
-  width: 360px;
-  height: 360px;
-  top: 50px;
-  left: 50px;
+  width: 90%;
   position: absolute;
   cursor: hand;
+}
+
+.card p {
+  margin: 5vw;
 }
 
 .rotate-left {
@@ -48,11 +50,12 @@
 
 .avatar {
   background: #222;
-  width: 340px;
-  height: 340px;
+  width: 90%;
+  height: 50vh;
+  overflow: hidden;
   display: block;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5%;
   background-size: auto 160% !important;
   background-position: center;
   background-repeat: no-repeat;
