@@ -68,7 +68,7 @@
   }
   ?>
 <script>
-  let path = window.location.hostname + window.location.pathname;
+  let path = window.location.pathname;
   title.innerHTML = path;
   document.title = path;
 </script>
