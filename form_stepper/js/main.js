@@ -22,15 +22,6 @@ function createUser() {
   }
 }
 
-// code here can NOT use name
-
-function myFunction() {
-  let name = "Birgitte";
-
-  // code here CAN use name
-
-}
-
 function validateForm() {
   let valid = true;
 

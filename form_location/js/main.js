@@ -5,22 +5,23 @@ console.log(document);
 console.log(window);
 console.log(navigator);
 
-// navigator.geolocation.getCurrentPosition(position => {
-//   console.log('latitude:', position.coords.latitude);
-//   console.log('longitude:', position.coords.longitude);
-// });
-
-fetch('http://ip-api.com/json').then((response) => {
-  return response.json();
-}).then((json) => {
-  console.log(json);
+navigator.geolocation.getCurrentPosition(position => {
+  console.log(position);
+  document.querySelector("#location").innerHTML += `
+  <p>Latitude: ${position.coords.latitude}</p>
+  <p>Longitude: ${position.coords.longitude}</p>
+  `;
 });
 
-// fetch('http://ip-api.com/json').then(function(response) {
-//   return response.json();
-// }).then(function(json) {
-//   console.log(json);
-// });
+fetch('http://ip-api.com/json').then(response => {
+  return response.json();
+}).then(location => {
+  console.log(location);
+  document.querySelector("#location").innerHTML += `
+  <p>City: ${location.city}</p>
+  <p>Country: ${location.country}</p>
+  `;
+});
 
 document.querySelector('#createUserBtn').addEventListener("click", function() {
   createUser();
