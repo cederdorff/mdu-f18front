@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let posts = [{
+  key: 0,
   title: "Hola",
   content: "This is my awesome content",
   image: "http://cederdorff.com/img/cphcloud_web.jpg"
 }];
+
 
 function init() {
   // modal
@@ -34,7 +36,7 @@ function readPosts() {
         <div class="card-image">
           <img src="${post.image}">
           <span class="card-title">${post.title}</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">more_horiz</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#actionModal"><i class="material-icons">more_horiz</i></a>
         </div>
         <div class="card-content">
           <p>${post.content}</p>
@@ -46,20 +48,16 @@ function readPosts() {
   document.querySelector('#postFeed').innerHTML = htmlTemplate;
 }
 
-function updatePost() {
+function updatePost() {}
 
-}
-
-function deletePost() {
-
-}
+function deletePost() {}
 
 // ------ Prieview image function ------ //
-function previewImage(file) {
+function previewImage(file, previewId) {
   if (file) {
     let reader = new FileReader();
     reader.onload = function(event) {
-      document.querySelector('#imagePreview').setAttribute('src', event.target.result);
+      document.querySelector('#' + previewId).setAttribute('src', event.target.result);
     };
     reader.readAsDataURL(file);
   }
