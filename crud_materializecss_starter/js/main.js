@@ -103,7 +103,16 @@ function updatePost() {
   }
 }
 
-function deletePost() {}
+function deletePost() {
+  console.log(selectedPostKey);
+
+  let filteredPosts = posts.filter((post) => {
+    return post.key != selectedPostKey;
+  });
+  console.log(filteredPosts);
+  posts = filteredPosts;
+  readPosts();
+}
 
 // ------ Prieview image function ------ //
 function previewImage(file, previewId) {
