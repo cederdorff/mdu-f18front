@@ -23,7 +23,21 @@ function init() {
 // ------ CRUD operations ------ //
 
 function createPost() {
-
+  let titleInput = document.querySelector('#title');
+  let contentInput = document.querySelector('#content');
+  let imageInput = document.querySelector('#imagePreview');
+  let newKey = 0;
+  if (posts.length > 0) {
+    newKey = posts[posts.length - 1].key + 1; // don't do this in IRL
+  }
+  let newPost = {
+    title: titleInput.value,
+    content: contentInput.value,
+    image: imageInput.src,
+    key: newKey
+  };
+  posts.push(newPost);
+  readPosts();
 }
 
 function readPosts() {
@@ -48,7 +62,15 @@ function readPosts() {
   document.querySelector('#postFeed').innerHTML = htmlTemplate;
 }
 
-function updatePost() {}
+function updatePost() {
+  let titleInput = document.querySelector('#titleUpdate');
+  let contentInput = document.querySelector('#contentUpdate');
+  let imageInput = document.querySelector('#imagePreviewUpdate');
+
+  console.log(titleInput);
+  console.log(contentInput);
+  console.log(imageInput);
+}
 
 function deletePost() {}
 
