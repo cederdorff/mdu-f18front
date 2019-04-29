@@ -11,6 +11,8 @@ let posts = [{
   image: "http://cederdorff.com/img/cphcloud_web.jpg"
 }];
 
+let selectedPostKey;
+
 
 function init() {
   // modal
@@ -50,7 +52,7 @@ function readPosts() {
         <div class="card-image">
           <img src="${post.image}">
           <span class="card-title">${post.title}</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#actionModal"><i class="material-icons">more_horiz</i></a>
+          <a onclick="setSelectedPost(${post.key})" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#actionModal"><i class="material-icons">more_horiz</i></a>
         </div>
         <div class="card-content">
           <p>${post.content}</p>
@@ -62,14 +64,43 @@ function readPosts() {
   document.querySelector('#postFeed').innerHTML = htmlTemplate;
 }
 
+function setSelectedPost(key) {
+  console.log(key);
+  selectedPostKey = key;
+
+  let titleInput = document.querySelector('#titleUpdate');
+  let contentInput = document.querySelector('#contentUpdate');
+  let imageInput = document.querySelector('#imagePreviewUpdate');
+
+  // set input fiels with selected post data
+  for (let post of posts) {
+    if (post.key === selectedPostKey) {
+      titleInput.value = post.title;
+      contentInput.value = post.content;
+      imageInput.src = post.image;
+    }
+  }
+}
+
 function updatePost() {
   let titleInput = document.querySelector('#titleUpdate');
   let contentInput = document.querySelector('#contentUpdate');
   let imageInput = document.querySelector('#imagePreviewUpdate');
 
-  console.log(titleInput);
-  console.log(contentInput);
-  console.log(imageInput);
+  console.log(titleInput.value);
+  console.log(contentInput.value);
+  console.log(imageInput.src);
+
+
+  for (let post of posts) {
+    if (post.key === selectedPostKey) {
+      console.log(post);
+      post.title = titleInput.value;
+      post.content = contentInput.value;
+      post.image = imageInput.src;
+      readPosts();
+    }
+  }
 }
 
 function deletePost() {}
